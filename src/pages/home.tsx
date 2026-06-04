@@ -226,7 +226,7 @@ function TickerStrip() {
 /* ─── Hero ─── */
 function HeroSection() {
   const slides = [
-    { badge: "🌾 मुख्य उत्पाद — धान", title: "धान के प्रीमियम\nहाइब्रिड बीज", subtitle: "1886 • PB1 • उच्च उत्पादन • किसान की पसंद", color: "#22c55e" },
+    { badge: "🌾 मुख्य उत्पाद — धान", title: "धान के प्रीमियम\nसर्टिफाइड बीज", subtitle: "1886 • PB1 • उच्च उत्पादन • किसान की पसंद", color: "#22c55e" },
     { badge: "🌿 रबी सीजन — गेहूं", title: "गेहूं के बेस्ट\nसर्टिफाइड बीज", subtitle: "अधिक पैदावार • जल्दी अंकुरण • टॉप ब्रांड उपलब्ध", color: "#f9a825" },
     { badge: "🌱 खरीफ — सोयाबीन", title: "सोयाबीन • चना\nकीटनाशक दवाइयां", subtitle: "असली ब्रांड • सही दाम • विशेषज्ञ सलाह मुफ्त", color: "#26a69a" },
   ];
@@ -360,7 +360,7 @@ function QuickEnquiryModal({ open, onClose, problem }: ModalProps) {
                 { name: "mobile", label: "मोबाइल नंबर *", placeholder: "10 अंकों का नंबर", type: "tel" },
                 { name: "village", label: "गांव / कस्बा *", placeholder: "जैसे: सलामतपुर", type: "text" },
                 { name: "crop", label: "फसल", placeholder: "जैसे: धान, गेहूं, सोयाबीन", type: "text" },
-                { name: "acres", label: "कितने एकड़", placeholder: "जैसे: 5", type: "number" },
+                { name: "acres", label: "कितने एकड़/बीघा", placeholder: "जैसे: 5", type: "number" },
               ].map(f => (
                 <div key={f.name}>
                   <label className="text-xs font-bold text-foreground/70 font-hindi mb-1 block">{f.label}</label>
@@ -396,11 +396,11 @@ function SmartFarmerHelpSection() {
     { emoji: "🌾", label: "1886 धान Variety चाहिए", color: "#16a34a" },
     { emoji: "🌾", label: "PB1 धान चाहिए", color: "#15803d" },
     { emoji: "🗒️", label: "धान का प्रोजेक्ट कराना है", color: "#F9A825" },
-    { emoji: "🌿", label: "धान की दवाई चाहिए", color: "#00897B" },
+    { emoji: "🌾", label: "धान की दवाई चाहिए", color: "#00897B" },
     { emoji: "💦", label: "First Spray Guidance", color: "#26A69A" },
     { emoji: "🍂", label: "फसल में रोग लग गया", color: "#ef4444" },
     { emoji: "🌱", label: "खरपतवार नाशक चाहिए", color: "#84cc16" },
-    { emoji: "🚜", label: "घर से धान उठवाई", color: "#f97316" },
+    { emoji: "🚜", label: "घर से धान उठवाना है।", color: "#f97316" },
     { emoji: "🌾", label: "गेहूं बीज चाहिए", color: "#eab308" },
     { emoji: "🧑‍🌾", label: "किसान सलाह चाहिए", color: "#8b5cf6" },
     { emoji: "🌻", label: "अन्य समस्या", color: "#6b7280" },
@@ -424,7 +424,7 @@ function SmartFarmerHelpSection() {
           </motion.h2>
           <motion.p initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} viewport={{ once: true }} transition={{ delay: 0.2 }}
             className="text-muted-foreground font-hindi mt-3 text-base md:text-lg">
-            नीचे अपनी समस्या चुनें — Keshav Bhai तुरंत WhatsApp पर जवाब देंगे
+            नीचे अपनी समस्या चुनें — Keshav Bhai जल्द ही आपसे संपर्क करेंगे।
           </motion.p>
           <motion.div initial={{ scaleX: 0 }} whileInView={{ scaleX: 1 }} viewport={{ once: true }} transition={{ delay: 0.25, duration: 0.8 }}
             className="w-24 h-1 bg-secondary mx-auto mt-4 rounded-full" />
@@ -887,7 +887,7 @@ function DhanUthwaiSection() {
           </motion.div>
           <motion.h2 initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ delay: 0.1 }}
             className="text-3xl md:text-4xl font-hindi font-black text-white">
-            धान घर से उठवाई चाहिए?
+            धान घर से उठवाना है?
           </motion.h2>
           <p className="text-white/60 font-hindi mt-2">Request भेजें — Keshav Bhai खुद व्यवस्था करेंगे</p>
           <motion.div initial={{ scaleX: 0 }} whileInView={{ scaleX: 1 }} viewport={{ once: true }} transition={{ delay: 0.2, duration: 0.8 }}
