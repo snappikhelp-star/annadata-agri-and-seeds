@@ -19,6 +19,8 @@ import shopImg1 from "@assets/WhatsApp_Image_2026-06-04_at_1.14.14_PM_(1)_178055
 import shopImg2 from "@assets/WhatsApp_Image_2026-06-04_at_1.14.14_PM_1780559137513.jpeg";
 import shopImg3 from "@assets/WhatsApp_Image_2026-06-04_at_1.14.13_PM_1780559137513.jpeg";
 import shopImg4 from "@assets/WhatsApp_Image_2026-06-04_at_1.14.39_PM_1780559137513.jpeg";
+import shopImg5 from "@/attached_assets/WhatsApp Image 2026-06-04 at 4.22.39 PM.jpeg";
+import shopImg6 from "@/attached_assets/WhatsApp Image 2026-06-04 at 4.22.40 PM.jpeg";
 
 const PHONE = "919691712455";
 const PHONE_SHORT = "9691712455";
@@ -1145,7 +1147,9 @@ function ShopGallerySection() {
     { src: shopImg2, caption: "किसानों का स्वागत है! — Keshav Bhai", tag: "🧑‍🌾 Welcome" },
     { src: shopImg3, caption: "सभी कृषि उत्पाद एक ही जगह", tag: "🌿 Products" },
     { src: shopImg4, caption: "टीम अन्नदाता — आपकी सेवा में हमेशा तैयार", tag: "⭐ Team" },
-  ];
+    { src: shopImg5, caption: "अन्नदाता एग्री एंड सीड्स", tag: "📸 Gallery" },
+    { src: shopImg6, caption: "किसानों की सेवा में", tag: "🌾 Farm" },
+    ];
 
   return (
     <section className="py-14 md:py-20 bg-background relative">
